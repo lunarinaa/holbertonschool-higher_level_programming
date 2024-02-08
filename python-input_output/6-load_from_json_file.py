@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines a function"""
 
-import json 
+import json
 
 
 def load_from_json_file(filename):
