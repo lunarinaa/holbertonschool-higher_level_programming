@@ -3,9 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """writes a striong to a text file"""
+    """writes a string to a text file"""
     count = 0
-    with open(filename) as f:
-        for c in f:
-            count += 1
-        return count
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
