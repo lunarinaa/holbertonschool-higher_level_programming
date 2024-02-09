@@ -12,6 +12,6 @@ def pascal_triangle(n):
         temp = [1]
         for i in range(len(shape) - 1):
             temp.append(shape[i] + shape[i + 1])
-            temp.append(1)
-            triangle.append(temp)
+        temp.append(1)
+        triangle.append(temp)
     return triangle
