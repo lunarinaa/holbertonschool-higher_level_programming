@@ -14,7 +14,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Returns dictionary representation of Sudent"""
-        if (type(attrs) == list and
-            all(type(elem) == str for elem in attrs)):
+        if (type(attrs) is list and
+                all(type(elem) is str for elem in attrs)):
             return {a: getattr(self, a) for a in attrs if hasattr(self, a)}
         return self.__dict__
