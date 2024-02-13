@@ -15,8 +15,8 @@ class Rectangle(Base):
 
         self.__width = width
         self.__height = height
-        self._x = x
-        self._y = y
+        self.__x = x
+        self.__y = y
 
     """Getter and setter for width"""
     @property
