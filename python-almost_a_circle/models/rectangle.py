@@ -107,3 +107,10 @@ class Rectangle(Base):
                 f"[Rectangle] ({self.id}) "
                 f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
                 )
+    def update(self, *args):
+        for arg in args:
+            self.id = id
+            self.__width = width
+            self.__height = height
+            self.__x = x
+            self.__y = y
