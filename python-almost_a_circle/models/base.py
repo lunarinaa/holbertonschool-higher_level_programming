@@ -7,7 +7,8 @@ class Base:
     """Class named Base"""
 
     __nb_objects = 0
-
+    
+    @staticmethod
     def __init__(self, id=None):
         """Class constructor"""
 
@@ -20,6 +21,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """Json representation"""
         if list_dictionaries is None:
-            return []
+            return "[]"
         dicty = json.dumps(list_dictionaries)
         return dicty
