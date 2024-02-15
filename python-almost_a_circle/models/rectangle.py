@@ -107,6 +107,7 @@ class Rectangle(Base):
                 f"[Rectangle] ({self.id}) "
                 f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
                 )
+<<<<<<< HEAD
     def update(self, *args):
         for arg in args:
             self.id = id
@@ -114,3 +115,24 @@ class Rectangle(Base):
             self.__height = height
             self.__x = x
             self.__y = y
+=======
+
+    def update(self, *args, **kwargs):
+        """Assigning argument to each attribute"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for i in range(len(args)):
+            if i < len(attributes):
+                setattr(self, attributes[i], args[i])
+        for key, value in kwargs.items():
+            if key in attributes:
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ Returns the dictionary representation of the Rectangle"""
+        return {'id': self.id,
+                'width': self.__width,
+                'height': self.__height,
+                'x': self.x,
+                'y': self.y
+                }
+>>>>>>> fed5e24da567ea42dd0fe0923376489871abdfd4

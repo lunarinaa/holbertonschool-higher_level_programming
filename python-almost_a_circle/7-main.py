@@ -9,7 +9,10 @@ if __name__ == "__main__":
 
     r1.update(89)
     print(r1)
+<<<<<<< HEAD
 
+=======
+>>>>>>> fed5e24da567ea42dd0fe0923376489871abdfd4
     r1.update(89, 2)
     print(r1)
 
