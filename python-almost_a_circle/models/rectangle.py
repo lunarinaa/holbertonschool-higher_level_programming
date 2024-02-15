@@ -107,7 +107,6 @@ class Rectangle(Base):
                 f"[Rectangle] ({self.id}) "
                 f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
                 )
-<<<<<<< HEAD
     def update(self, *args):
         for arg in args:
             self.id = id
@@ -115,7 +114,6 @@ class Rectangle(Base):
             self.__height = height
             self.__x = x
             self.__y = y
-=======
 
     def update(self, *args, **kwargs):
         """Assigning argument to each attribute"""
@@ -135,4 +133,3 @@ class Rectangle(Base):
                 'x': self.x,
                 'y': self.y
                 }
->>>>>>> fed5e24da567ea42dd0fe0923376489871abdfd4
