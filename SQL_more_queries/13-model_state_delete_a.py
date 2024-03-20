@@ -1,0 +1,1 @@
+-- deletes all State objects with a name containing the 
