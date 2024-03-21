@@ -11,7 +11,7 @@ if __name__ == "__main__":
       passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cursor = db_connection.cursor()
     cursor.execute(
-     "SELECT * FROM states WHERE name LIKE '{}' "
+     "SELECT * FROM states WHERE name LIKE BINARY '{}' "
      "ORDER BY id".format(sys.argv[4])
     )
     output = cursor.fetchall()
