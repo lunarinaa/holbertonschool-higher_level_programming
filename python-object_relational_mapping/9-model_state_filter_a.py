@@ -13,6 +13,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     for state in session.query(State).order_bu(State.id).filter(
-              State.name.contains('a')):
+              State.name.contains('a%')):
         print("{}: {}".format(state.id, state.name))
     session.close()
