@@ -10,9 +10,9 @@ if __name__ == "__main__":
     cursor = db_connection.cursor()
     cursor.execute("SELECT cities.name FROM cities \
                     WHERE state_id = (SELECT id \
-                    FROM states WHERE name = '{}')".format(sys.argv[4])
-                    )
-    output = cursor.fetchall()
-    cities = [city[0] for city in output]
+                    FROM states WHERE name = '{}')".format(sys.argv[4]))
+    # output = cursor.fetchall()
+    cities = [city[0] for city in cursor.fetchall()]
     print(", ".join(cities))
     cursor.close()
+    db_connection.close()
