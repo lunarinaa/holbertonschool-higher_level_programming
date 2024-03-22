@@ -13,7 +13,8 @@ if __name__ == "__main__":
     met = 0
     for state in session.query(State).order_by(State.id):
         if state.name == sys.argv[4]:
+            print("{}".format(state.id))
             met = 1
     if met == 0:
-       print("Not found")
+        print("Not found")
     session.close()
