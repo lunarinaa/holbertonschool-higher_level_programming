@@ -11,8 +11,8 @@ if __name__ == "__main__":
       passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cursor = db_connection.cursor()
     cursor.execute(
-      "SELECT cities.id, cities.name, states.name FROM cities \
-        LEFT JOIN states ON cities.state_id = states.id ORDER BY cities.id"
+     "SELECT * FROM states WHERE name LIKE BINARY '{}' "
+     "ORDER BY id".format(sys.argv[4])
     )
     output = cursor.fetchall()
     for i in output:
