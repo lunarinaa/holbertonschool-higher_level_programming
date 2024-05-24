@@ -33,3 +33,21 @@ How to listen/bind to user events
 
 ![alt text](<Screenshot 2024-05-24 at 14.07.56.png>)
 
+3. Toggle classes
+![alt text](<Screenshot 2024-05-24 at 14.10.07.png>)
+
+4. List of elements
+![alt text](<Screenshot 2024-05-24 at 14.11.01.png>)
+
+5. Change the text
+![alt text](<Screenshot 2024-05-24 at 14.11.42.png>)
+
+6. Star wars character
+
+![alt text](<Screenshot 2024-05-24 at 14.13.05.png>)
+
+7. Star Wars movies
+![alt text](<Screenshot 2024-05-24 at 14.13.42.png>)
+
+8. Say Hello!
+![alt text](<Screenshot 2024-05-24 at 14.14.45.png>)
